@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sqflite_demo/screens/home_page.dart';
-import 'screens/transaction_page.dart';
+import 'screens/sharedPreferences.dart';
+
 
 void main() {
   // AllBinding().dependencies();
@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SqfliteDemo(),
+      home: SharedPreferencesDemo(),
       getPages: [
-        GetPage(name: '/card-page', page: () => TransactionPage()),
+        GetPage(name: '/card-page', page: () => const SharedPreferencesDemo()),
 
         ],
     );
