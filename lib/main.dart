@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'screens/getx_page1.dart';
 import 'screens/sharedPreferences.dart';
-
 
 void main() {
   // AllBinding().dependencies();
@@ -20,11 +20,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SharedPreferencesDemo(),
+      home:  GetX_Page1(),
       getPages: [
         GetPage(name: '/card-page', page: () => const SharedPreferencesDemo()),
-
-        ],
+      ],
     );
   }
 }
